@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, span, button, input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.head {
+  padding: 17px 10px 40px 10px;
+  background: #FFF;
+}
+
+.head__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #62D0DF;
+  font-size: 27px;
+}
+
+.head__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__navigation-item {
+  padding: 10px;
+  margin: 10px;
+}
+
+.head__navigation-item:first-child {
+  border-bottom: 2px solid rgb(6, 88, 6);
+}
+
+.head__btn {
+  color: #FFF;
+  background: #62D0DF;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info {
+  background: #62D0DF;
+}
+
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.info__text-wrapper {
+  padding: 100px 140px;
+  color: #FFF;
+}
+
+.info__text-title {
+  font-size: 38px;
+  margin-top: 60px;
+}
+
+.info__text-text {
+  margin-top: 50px;
+  max-width: 800px;
+}
+
+.info__text-text-elem {
+  font-weight: 700;
+  display: inline;
+}
+
+.info__img {
+  height: 630px;
+  width: auto;
+}
+
+.about-us {
+  padding: 100px 0 20px;
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us__title {
+  font-size: 22px;
+  color: rgb(153, 153, 153);
+}
+
+.about-us__text {
+  max-width: 600px;
+  color: rgb(3, 3, 80);
+  line-height: 1.5em;
+  margin: 45px 0 55px;
+}
+
+.about-us__subtitle {
+  color: rgb(199, 198, 198);
+}
+
+.about-us__title,
+.about-us__subtitle {
+  text-transform: uppercase;
+}
+
+.skill-cards {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+}
+
+.skill-cards__card {
+  padding: 70px 40px;
+}
+
+.skill-cards__card p {
+  padding: 28px 0;
+  border-top: 1px solid #FFF;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.skill-cards__card:nth-child(1) {
+  background: rgb(255, 204, 212);
+}
+
+.skill-cards__card:nth-child(2) {
+  background: rgb(189, 251, 167);
+}
+
+.skill-cards__card:nth-child(3) {
+  background: rgb(121, 210, 236);
+}
+
+.skill-cards__card:nth-child(4) {
+  background: rgb(67, 27, 177);
+}
+
+.foods {
+  padding: 100px 0;
+  background: rgb(250, 238, 240);
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 33.3%));
+}
+
+.foods__food {
+  position: relative;
+}
+
+.foods__food-text {
+  position: absolute;
+  top: 20%;
+  color: #FFF;
+  left: 10%;
+}
+
+.foods__food-img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  padding: 100px 10px;
+}
+
+.text__container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(33.3% - 20px), 1fr));
+  grid-gap: 20px;
+}
+
+.text__card {
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  padding: 50px 0;
+  background: #62D0DF;
+  color: #FFF;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .text__container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skill-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .foods {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
